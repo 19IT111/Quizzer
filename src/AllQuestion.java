@@ -15,6 +15,7 @@ import javax.swing.GroupLayout;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import java.awt.Color;
 import java.awt.Rectangle;
+import javax.swing.JSeparator;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -58,16 +59,18 @@ public class AllQuestion extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jScrollPane1.setFont(new Font("Tahoma", Font.PLAIN, 13));
+        jScrollPane1.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 16));
         jScrollPane1.setAutoscrolls(true);
-        jScrollPane1.setBackground(Color.LIGHT_GRAY);
+        jScrollPane1.setBackground(new Color(211, 211, 211));
         jScrollPane1.setForeground(Color.BLACK);
         jTable1 = new javax.swing.JTable();
+        jTable1.setBackground(new Color(211, 211, 211));
+        jTable1.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 15));
         jLabel1 = new javax.swing.JLabel();
         jLabel1.setIcon(new ImageIcon(AllQuestion.class.getResource("/img2/icons8-select-all-80.png")));
         jLabel2 = new javax.swing.JLabel();
         jLabel2.setForeground(Color.WHITE);
-        jLabel2.setFont(new Font("Tahoma", Font.BOLD, 26));
+        jLabel2.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 35));
         jLabel3 = new javax.swing.JLabel();
         jLabel3.setIcon(new ImageIcon(AllQuestion.class.getResource("/img2/icons8-close-window-80.png")));
 
@@ -93,6 +96,8 @@ public class AllQuestion extends javax.swing.JFrame {
                 jLabel3MouseClicked(evt);
             }
         });
+        
+        separator = new JSeparator();
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         layout.setHorizontalGroup(
@@ -107,16 +112,22 @@ public class AllQuestion extends javax.swing.JFrame {
         			.addGap(10)
         			.addComponent(jScrollPane1, GroupLayout.DEFAULT_SIZE, 816, Short.MAX_VALUE)
         			.addGap(10))
+        		.addGroup(layout.createSequentialGroup()
+        			.addContainerGap()
+        			.addComponent(separator, GroupLayout.DEFAULT_SIZE, 816, Short.MAX_VALUE)
+        			.addContainerGap())
         );
         layout.setVerticalGroup(
         	layout.createParallelGroup(Alignment.LEADING)
         		.addGroup(layout.createSequentialGroup()
-        			.addGroup(layout.createParallelGroup(Alignment.TRAILING)
+        			.addGroup(layout.createParallelGroup(Alignment.LEADING)
         				.addComponent(jLabel1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        				.addGroup(Alignment.LEADING, layout.createParallelGroup(Alignment.TRAILING, false)
+        				.addGroup(layout.createParallelGroup(Alignment.TRAILING, false)
         					.addComponent(jLabel3, Alignment.LEADING, 0, 0, Short.MAX_VALUE)
         					.addComponent(jLabel2, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)))
-        			.addGap(39)
+        			.addGap(18)
+        			.addComponent(separator, GroupLayout.DEFAULT_SIZE, 2, Short.MAX_VALUE)
+        			.addGap(41)
         			.addComponent(jScrollPane1, GroupLayout.PREFERRED_SIZE, 331, GroupLayout.PREFERRED_SIZE)
         			.addContainerGap())
         );
@@ -170,5 +181,6 @@ public class AllQuestion extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private JSeparator separator;
     // End of variables declaration//GEN-END:variables
 }

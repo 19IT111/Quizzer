@@ -15,6 +15,7 @@ import java.awt.event.ActionEvent;
 import java.sql.*;
 import Project.ConnectionProvider;
 import java.awt.Color;
+import javax.swing.JSeparator;
 public class DeleteQuestion {
 
 	private JFrame frame;
@@ -56,43 +57,43 @@ public class DeleteQuestion {
 		
 		JLabel lblNewLabel = new JLabel("Id:");
 		lblNewLabel.setForeground(Color.WHITE);
-		lblNewLabel.setFont(new Font("Verdana", Font.BOLD, 16));
-		lblNewLabel.setBounds(93, 135, 46, 14);
+		lblNewLabel.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 18));
+		lblNewLabel.setBounds(93, 135, 46, 26);
 		getFrame().getContentPane().add(lblNewLabel);
 		
 		textField = new JTextField();
-		textField.setFont(new Font("Tahoma", Font.BOLD, 15));
-		textField.setBounds(180, 133, 86, 20);
+		textField.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 18));
+		textField.setBounds(180, 133, 86, 28);
 		getFrame().getContentPane().add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblNewLabel_1 = new JLabel("Question");
 		lblNewLabel_1.setForeground(Color.WHITE);
-		lblNewLabel_1.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblNewLabel_1.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 18));
 		lblNewLabel_1.setBounds(76, 210, 92, 28);
 		getFrame().getContentPane().add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Option 1");
 		lblNewLabel_2.setForeground(Color.WHITE);
-		lblNewLabel_2.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblNewLabel_2.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 18));
 		lblNewLabel_2.setBounds(93, 266, 75, 28);
 		getFrame().getContentPane().add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_3 = new JLabel("Option 2");
 		lblNewLabel_3.setForeground(Color.WHITE);
-		lblNewLabel_3.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblNewLabel_3.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 18));
 		lblNewLabel_3.setBounds(93, 305, 75, 25);
 		getFrame().getContentPane().add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_4 = new JLabel("Option 3");
 		lblNewLabel_4.setForeground(Color.WHITE);
-		lblNewLabel_4.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblNewLabel_4.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 18));
 		lblNewLabel_4.setBounds(93, 340, 75, 25);
 		getFrame().getContentPane().add(lblNewLabel_4);
 		
 		JLabel lblNewLabel_5 = new JLabel("Option 4");
 		lblNewLabel_5.setForeground(Color.WHITE);
-		lblNewLabel_5.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblNewLabel_5.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 18));
 		lblNewLabel_5.setBounds(93, 371, 75, 25);
 		getFrame().getContentPane().add(lblNewLabel_5);
 		
@@ -104,26 +105,26 @@ public class DeleteQuestion {
 		
 		JLabel lblO1 = new JLabel("");
 		lblO1.setForeground(Color.LIGHT_GRAY);
-		lblO1.setFont(new Font("Verdana", Font.BOLD, 15));
+		lblO1.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 17));
 		lblO1.setBounds(180, 337, 700, 28);
 		getFrame().getContentPane().add(lblO1);
 		
 		JLabel lblO2 = new JLabel("");
 		lblO2.setForeground(Color.LIGHT_GRAY);
-		lblO2.setFont(new Font("Verdana", Font.BOLD, 15));
+		lblO2.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 17));
 		lblO2.setBounds(180, 370, 700, 26);
 		getFrame().getContentPane().add(lblO2);
 		
 		JLabel lblO3 = new JLabel("");
 		lblO3.setForeground(Color.LIGHT_GRAY);
-		lblO3.setFont(new Font("Verdana", Font.BOLD, 15));
-		lblO3.setBounds(185, 276, 700, 29);
+		lblO3.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 17));
+		lblO3.setBounds(180, 266, 700, 29);
 		getFrame().getContentPane().add(lblO3);
 		
 		JLabel lblO4 = new JLabel("");
 		lblO4.setForeground(Color.LIGHT_GRAY);
-		lblO4.setFont(new Font("Verdana", Font.BOLD, 15));
-		lblO4.setBounds(185, 316, 700, 27);
+		lblO4.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 17));
+		lblO4.setBounds(180, 303, 700, 27);
 		getFrame().getContentPane().add(lblO4);
 		
 		JButton btnNewButton = new JButton("Delete");
@@ -152,19 +153,19 @@ public class DeleteQuestion {
 				
 			}
 		});
-		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnNewButton.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 17));
 		btnNewButton.setBounds(413, 448, 124, 41);
 		getFrame().getContentPane().add(btnNewButton);
 		
 		JLabel lblNewLabel_11 = new JLabel("Answer");
 		lblNewLabel_11.setForeground(Color.WHITE);
-		lblNewLabel_11.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblNewLabel_11.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 18));
 		lblNewLabel_11.setBounds(93, 407, 75, 28);
 		getFrame().getContentPane().add(lblNewLabel_11);
 		
 		JLabel lblA = new JLabel("");
 		lblA.setForeground(Color.LIGHT_GRAY);
-		lblA.setFont(new Font("Verdana", Font.BOLD, 15));
+		lblA.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 17));
 		lblA.setBounds(180, 407, 697, 28);
 		getFrame().getContentPane().add(lblA);
 		
@@ -212,7 +213,7 @@ public class DeleteQuestion {
 				
 			}
 		});
-		btnNewButton_1.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnNewButton_1.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 17));
 		btnNewButton_1.setBounds(413, 123, 124, 41);
 		getFrame().getContentPane().add(btnNewButton_1);
 		
@@ -226,6 +227,10 @@ public class DeleteQuestion {
 		lblNewLabel_7.setFont(new Font("Verdana", Font.BOLD, 26));
 		lblNewLabel_7.setBounds(76, 0, 334, 64);
 		frame.getContentPane().add(lblNewLabel_7);
+		
+		JSeparator separator = new JSeparator();
+		separator.setBounds(10, 75, 930, 2);
+		frame.getContentPane().add(separator);
 	}
 
 	public JFrame getFrame() {

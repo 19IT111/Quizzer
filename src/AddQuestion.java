@@ -21,6 +21,7 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
 import Project.ConnectionProvider;
+import javax.swing.JSeparator;
 public class AddQuestion extends JFrame {
 
 	/**
@@ -81,86 +82,86 @@ public class AddQuestion extends JFrame {
 		
 		JLabel lblNewLabel_1 = new JLabel("Question Id");
 		lblNewLabel_1.setForeground(Color.WHITE);
-		lblNewLabel_1.setFont(new Font("Verdana", Font.BOLD, 16));
-		lblNewLabel_1.setBounds(148, 77, 123, 28);
+		lblNewLabel_1.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 18));
+		lblNewLabel_1.setBounds(148, 77, 123, 31);
 		contentPane.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Question");
 		lblNewLabel_2.setForeground(Color.WHITE);
-		lblNewLabel_2.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblNewLabel_2.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 18));
 		lblNewLabel_2.setBounds(113, 130, 117, 28);
 		contentPane.add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_3 = new JLabel("Option 1");
 		lblNewLabel_3.setForeground(Color.WHITE);
-		lblNewLabel_3.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblNewLabel_3.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 18));
 		lblNewLabel_3.setBounds(175, 179, 80, 28);
 		contentPane.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_4 = new JLabel("Option 2");
 		lblNewLabel_4.setForeground(Color.WHITE);
-		lblNewLabel_4.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblNewLabel_4.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 18));
 		lblNewLabel_4.setBounds(175, 218, 80, 28);
 		contentPane.add(lblNewLabel_4);
 		
 		JLabel lblNewLabel_5 = new JLabel("Option 3");
 		lblNewLabel_5.setForeground(Color.WHITE);
-		lblNewLabel_5.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblNewLabel_5.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 18));
 		lblNewLabel_5.setBounds(175, 257, 80, 28);
 		contentPane.add(lblNewLabel_5);
 		
 		JLabel lblNewLabel_6 = new JLabel("Option 4");
 		lblNewLabel_6.setForeground(Color.WHITE);
-		lblNewLabel_6.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblNewLabel_6.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 18));
 		lblNewLabel_6.setBounds(175, 300, 80, 31);
 		contentPane.add(lblNewLabel_6);
 		
 		JLabel lblNewLabel_7 = new JLabel("Answer");
 		lblNewLabel_7.setForeground(Color.WHITE);
-		lblNewLabel_7.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblNewLabel_7.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 18));
 		lblNewLabel_7.setBounds(175, 352, 80, 31);
 		contentPane.add(lblNewLabel_7);
 		
 		tfQuestion = new JTextField();
-		tfQuestion.setFont(new Font("Verdana", Font.PLAIN, 15));
+		tfQuestion.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 18));
 		tfQuestion.setBounds(218, 132, 577, 28);
 		contentPane.add(tfQuestion);
 		tfQuestion.setColumns(10);
 		
 		tfOpt1 = new JTextField();
-		tfOpt1.setFont(new Font("Verdana", Font.PLAIN, 15));
+		tfOpt1.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 18));
 		tfOpt1.setBounds(265, 179, 400, 28);
 		contentPane.add(tfOpt1);
 		tfOpt1.setColumns(10);
 		
 		tfOpt2 = new JTextField();
-		tfOpt2.setFont(new Font("Verdana", Font.PLAIN, 15));
+		tfOpt2.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 18));
 		tfOpt2.setBounds(265, 218, 401, 28);
 		contentPane.add(tfOpt2);
 		tfOpt2.setColumns(10);
 		
 		tfOpt3 = new JTextField();
-		tfOpt3.setFont(new Font("Verdana", Font.PLAIN, 15));
+		tfOpt3.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 18));
 		tfOpt3.setBounds(265, 258, 400, 31);
 		contentPane.add(tfOpt3);
 		tfOpt3.setColumns(10);
 		
 		tfOpt4 = new JTextField();
-		tfOpt4.setFont(new Font("Verdana", Font.PLAIN, 15));
+		tfOpt4.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 18));
 		tfOpt4.setBounds(265, 303, 400, 28);
 		contentPane.add(tfOpt4);
 		tfOpt4.setColumns(10);
 		
 		tfAnswer = new JTextField();
-		tfAnswer.setFont(new Font("Verdana", Font.PLAIN, 15));
+		tfAnswer.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 18));
 		tfAnswer.setBounds(265, 352, 400, 34);
 		contentPane.add(tfAnswer);
 		tfAnswer.setColumns(10);
 		
 		JLabel lblNewLabel_8 = new JLabel("00");
 		lblNewLabel_8.setForeground(new Color(255, 215, 0));
-		lblNewLabel_8.setFont(new Font("Verdana", Font.BOLD, 16));
-		lblNewLabel_8.setBounds(281, 84, 46, 14);
+		lblNewLabel_8.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 18));
+		lblNewLabel_8.setBounds(281, 78, 46, 28);
 		contentPane.add(lblNewLabel_8);
 		
 		JButton btnNewButton = new JButton("Save");
@@ -196,7 +197,7 @@ public class AddQuestion extends JFrame {
 ;			}
 		});
 		btnNewButton.setBackground(new Color(143, 188, 143));
-		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 13));
+		btnNewButton.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 18));
 		btnNewButton.setBounds(113, 405, 117, 48);
 		contentPane.add(btnNewButton);
 		
@@ -213,7 +214,7 @@ public class AddQuestion extends JFrame {
 			}
 		});
 		btnNewButton_1.setBackground(new Color(250, 128, 114));
-		btnNewButton_1.setFont(new Font("Tahoma", Font.BOLD, 13));
+		btnNewButton_1.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 18));
 		btnNewButton_1.setBounds(690, 405, 117, 48);
 		contentPane.add(btnNewButton_1);
 		
@@ -223,10 +224,14 @@ public class AddQuestion extends JFrame {
 		contentPane.add(lblNewLabel_9);
 		
 		JLabel lblNewLabel_10 = new JLabel("Add Question");
-		lblNewLabel_10.setFont(new Font("Verdana", Font.BOLD, 26));
+		lblNewLabel_10.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 35));
 		lblNewLabel_10.setForeground(new Color(255, 255, 255));
 		lblNewLabel_10.setBounds(82, 11, 245, 43);
 		contentPane.add(lblNewLabel_10);
+		
+		JSeparator separator = new JSeparator();
+		separator.setBounds(10, 68, 930, 2);
+		contentPane.add(separator);
 		
 		try {
 			Connection con=ConnectionProvider.getCon();

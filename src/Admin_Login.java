@@ -62,27 +62,32 @@ public class Admin_Login {
 		getFrame().setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setBounds(170, 284, 74, 42);
 		lblNewLabel.setIcon(new ImageIcon(Admin_Login.class.getResource("/img2/icons8-username-26.png")));
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 16));
 		lblNewLabel.setForeground(SystemColor.inactiveCaptionText);
 		
 		textField = new JTextField();
+		textField.setBounds(238, 284, 269, 42);
 		textField.setForeground(new Color(255, 255, 255));
 		textField.setBackground(new Color(105, 105, 105));
 		textField.setHorizontalAlignment(SwingConstants.CENTER);
 		textField.setColumns(10);
 		
 		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setBounds(170, 411, 74, 42);
 		lblNewLabel_1.setIcon(new ImageIcon(Admin_Login.class.getResource("/img2/icons8-lock-26.png")));
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 16));
 		lblNewLabel_1.setForeground(SystemColor.windowBorder);
 		
 		passwordField = new JPasswordField();
+		passwordField.setBounds(238, 411, 253, 42);
 		passwordField.setForeground(new Color(255, 255, 255));
 		passwordField.setBackground(new Color(105, 105, 105));
 		passwordField.setHorizontalAlignment(SwingConstants.CENTER);
 		
 		JButton btnNewButton = new JButton("Login");
+		btnNewButton.setBounds(549, 672, 141, 53);
 		btnNewButton.setForeground(new Color(255, 255, 255));
 		btnNewButton.setBorder(UIManager.getBorder("Button.border"));
 		btnNewButton.setBackground(new Color(46, 139, 87));
@@ -99,9 +104,10 @@ public class Admin_Login {
 				
 			}
 		});
-		btnNewButton.setFont(new Font("Times New Roman", Font.BOLD, 21));
+		btnNewButton.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 20));
 		
 		JButton btnNewButton_1 = new JButton("Back");
+		btnNewButton_1.setBounds(50, 672, 141, 53);
 		btnNewButton_1.setForeground(new Color(255, 255, 255));
 		btnNewButton_1.setBackground(new Color(0, 128, 128));
 		btnNewButton_1.addActionListener(new ActionListener() {
@@ -111,9 +117,10 @@ public class Admin_Login {
 				x.frmIndex.setVisible(true);
 			}
 		});
-		btnNewButton_1.setFont(new Font("Times New Roman", Font.BOLD, 21));
+		btnNewButton_1.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 20));
 		
 		JCheckBox chckbxNewCheckBox = new JCheckBox("Show Password");
+		chckbxNewCheckBox.setBounds(286, 460, 170, 23);
 		chckbxNewCheckBox.setBackground(new Color(105, 105, 105));
 		chckbxNewCheckBox.setIcon(new ImageIcon(Admin_Login.class.getResource("/img2/icons8-eye-24.png")));
 		chckbxNewCheckBox.addActionListener(new ActionListener() {
@@ -126,92 +133,32 @@ public class Admin_Login {
 					
 			}
 		});
-		chckbxNewCheckBox.setFont(new Font("Tahoma", Font.BOLD, 12));
+		chckbxNewCheckBox.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 16));
 		chckbxNewCheckBox.setForeground(new Color(192, 192, 192));
 		
 		JLabel lblNewLabel_5 = new JLabel("");
+		lblNewLabel_5.setBounds(255, 284, 46, 14);
 		
 		JLabel lblNewLabel_6 = new JLabel("Admin Login");
+		lblNewLabel_6.setBounds(591, 31, 200, 47);
 		lblNewLabel_6.setForeground(UIManager.getColor("InternalFrame.minimizeIconBackground"));
-		lblNewLabel_6.setFont(new Font("Times New Roman", Font.BOLD, 30));
+		lblNewLabel_6.setFont(new Font("Yu Gothic UI Semilight", Font.BOLD, 34));
 		
 		JLabel lblNewLabel_2 = new JLabel("");
+		lblNewLabel_2.setBounds(0, 0, 1366, 768);
 		lblNewLabel_2.setBorder(null);
 		lblNewLabel_2.setIcon(new ImageIcon(Admin_Login.class.getResource("/img2/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg")));
-		GroupLayout groupLayout = new GroupLayout(frame.getContentPane());
-		groupLayout.setHorizontalGroup(
-			groupLayout.createParallelGroup(Alignment.LEADING)
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(591)
-					.addComponent(lblNewLabel_6, GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
-					.addGap(591))
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(170)
-					.addComponent(lblNewLabel, GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE)
-					.addGap(1138))
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(238)
-					.addComponent(passwordField, GroupLayout.PREFERRED_SIZE, 253, GroupLayout.PREFERRED_SIZE)
-					.addContainerGap(875, Short.MAX_VALUE))
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(551)
-					.addComponent(btnNewButton, GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
-					.addGap(690))
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(50)
-					.addComponent(btnNewButton_1, GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
-					.addGap(1191))
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(238)
-					.addComponent(textField, GroupLayout.DEFAULT_SIZE, 253, Short.MAX_VALUE)
-					.addGap(875))
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(286)
-					.addComponent(chckbxNewCheckBox, GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
-					.addGap(926))
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(255)
-					.addComponent(lblNewLabel_5, GroupLayout.PREFERRED_SIZE, 46, GroupLayout.PREFERRED_SIZE))
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(170)
-					.addComponent(lblNewLabel_1, GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE)
-					.addGap(1138))
-				.addComponent(lblNewLabel_2)
-		);
-		groupLayout.setVerticalGroup(
-			groupLayout.createParallelGroup(Alignment.LEADING)
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(31)
-					.addComponent(lblNewLabel_6, GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
-					.addGap(206)
-					.addComponent(lblNewLabel, GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
-					.addGap(85)
-					.addComponent(passwordField, GroupLayout.PREFERRED_SIZE, 42, GroupLayout.PREFERRED_SIZE)
-					.addGap(207)
-					.addComponent(btnNewButton, GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
-					.addGap(55))
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(672)
-					.addComponent(btnNewButton_1, GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
-					.addGap(43))
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(284)
-					.addComponent(textField, GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
-					.addGap(442))
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(460)
-					.addComponent(chckbxNewCheckBox, GroupLayout.PREFERRED_SIZE, 23, Short.MAX_VALUE)
-					.addGap(285))
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(284)
-					.addComponent(lblNewLabel_5, GroupLayout.PREFERRED_SIZE, 14, GroupLayout.PREFERRED_SIZE))
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(411)
-					.addComponent(lblNewLabel_1, GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
-					.addGap(315))
-				.addComponent(lblNewLabel_2)
-		);
-		frame.getContentPane().setLayout(groupLayout);
+		frame.getContentPane().setLayout(null);
+		frame.getContentPane().add(lblNewLabel_6);
+		frame.getContentPane().add(lblNewLabel);
+		frame.getContentPane().add(passwordField);
+		frame.getContentPane().add(btnNewButton);
+		frame.getContentPane().add(btnNewButton_1);
+		frame.getContentPane().add(textField);
+		frame.getContentPane().add(chckbxNewCheckBox);
+		frame.getContentPane().add(lblNewLabel_5);
+		frame.getContentPane().add(lblNewLabel_1);
+		frame.getContentPane().add(lblNewLabel_2);
 	}
 
 	public JFrame getFrame() {

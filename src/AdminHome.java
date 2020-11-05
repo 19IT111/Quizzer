@@ -62,7 +62,7 @@ public class AdminHome {
 		
 		JMenuItem mntmNewMenuItem_1 = new JMenuItem("ADD ");
 		mntmNewMenuItem_1.setIcon(new ImageIcon(AdminHome.class.getResource("/img2/icons8-add-80.png")));
-		mntmNewMenuItem_1.setHorizontalAlignment(SwingConstants.CENTER);
+		mntmNewMenuItem_1.setHorizontalAlignment(SwingConstants.LEFT);
 		mntmNewMenuItem_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				AddQuestion window=new AddQuestion();
@@ -72,13 +72,13 @@ public class AdminHome {
 		mntmNewMenuItem_1.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mntmNewMenuItem_1.setForeground(new Color(245, 245, 245));
 		mntmNewMenuItem_1.setBackground(new Color(105, 105, 105));
-		mntmNewMenuItem_1.setFont(new Font("Tahoma", Font.BOLD, 16));
+		mntmNewMenuItem_1.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 18));
 		
 		menuBar.add(mntmNewMenuItem_1);
 		
 		JMenuItem mntmNewMenuItem = new JMenuItem("EDIT");
 		mntmNewMenuItem.setIcon(new ImageIcon(AdminHome.class.getResource("/img2/icons8-edit-80.png")));
-		mntmNewMenuItem.setHorizontalAlignment(SwingConstants.CENTER);
+		mntmNewMenuItem.setHorizontalAlignment(SwingConstants.LEFT);
 		mntmNewMenuItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				EditQuestion window=new EditQuestion();
@@ -88,7 +88,7 @@ public class AdminHome {
 		mntmNewMenuItem.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mntmNewMenuItem.setForeground(new Color(245, 245, 245));
 		mntmNewMenuItem.setBackground(new Color(105, 105, 105));
-		mntmNewMenuItem.setFont(new Font("Tahoma", Font.BOLD, 16));
+		mntmNewMenuItem.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 18));
 	
 		menuBar.add(mntmNewMenuItem);
 		
@@ -102,15 +102,15 @@ public class AdminHome {
 				
 			}
 		});
-		mntmNewMenuItem_2.setHorizontalAlignment(SwingConstants.CENTER);
+		mntmNewMenuItem_2.setHorizontalAlignment(SwingConstants.LEFT);
 		mntmNewMenuItem_2.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mntmNewMenuItem_2.setForeground(new Color(245, 245, 245));
 		mntmNewMenuItem_2.setBackground(new Color(105, 105, 105));
-		mntmNewMenuItem_2.setFont(new Font("Tahoma", Font.BOLD, 16));
+		mntmNewMenuItem_2.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 18));
 		
 		menuBar.add(mntmNewMenuItem_2);
 		
-		JMenuItem mntmNewMenuItem_3 = new JMenuItem("ALL QUESTIONS");
+		JMenuItem mntmNewMenuItem_3 = new JMenuItem("QUESTIONS");
 		mntmNewMenuItem_3.setIcon(new ImageIcon(AdminHome.class.getResource("/img2/icons8-select-all-80.png")));
 		mntmNewMenuItem_3.addMouseListener(new MouseAdapter() {
 			@Override
@@ -119,27 +119,27 @@ public class AdminHome {
 				aq.setVisible(true);
 			}
 		});
-		mntmNewMenuItem_3.setHorizontalAlignment(SwingConstants.CENTER);
+		mntmNewMenuItem_3.setHorizontalAlignment(SwingConstants.LEFT);
 		mntmNewMenuItem_3.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mntmNewMenuItem_3.setForeground(new Color(245, 245, 245));
 		mntmNewMenuItem_3.setBackground(new Color(105, 105, 105));
-		mntmNewMenuItem_3.setFont(new Font("Tahoma", Font.BOLD, 16));
+		mntmNewMenuItem_3.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 18));
 		
 		menuBar.add(mntmNewMenuItem_3);
 		
 		JMenuItem mntmNewMenuItem_4 = new JMenuItem("RESULT");
 		mntmNewMenuItem_4.setIcon(new ImageIcon(AdminHome.class.getResource("/img2/icons8-test-passed-80.png")));
-		mntmNewMenuItem_4.setHorizontalAlignment(SwingConstants.CENTER);
+		mntmNewMenuItem_4.setHorizontalAlignment(SwingConstants.LEFT);
 		mntmNewMenuItem_4.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mntmNewMenuItem_4.setForeground(new Color(245, 245, 245));
 		mntmNewMenuItem_4.setBackground(new Color(105, 105, 105));
-		mntmNewMenuItem_4.setFont(new Font("Tahoma", Font.BOLD, 16));
+		mntmNewMenuItem_4.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 18));
 		
 		menuBar.add(mntmNewMenuItem_4);
 		
 		JMenuItem mntmNewMenuItem_5 = new JMenuItem("LOGOUT");
 		mntmNewMenuItem_5.setIcon(new ImageIcon(AdminHome.class.getResource("/img2/icons8-export-80.png")));
-		mntmNewMenuItem_5.setHorizontalAlignment(SwingConstants.CENTER);
+		mntmNewMenuItem_5.setHorizontalAlignment(SwingConstants.LEFT);
 		mntmNewMenuItem_5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				int a=JOptionPane.showConfirmDialog(null,"Do You Really Want to Logout?","Confirm",JOptionPane.YES_NO_OPTION);
@@ -153,13 +153,13 @@ public class AdminHome {
 		mntmNewMenuItem_5.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mntmNewMenuItem_5.setForeground(new Color(245, 245, 245));
 		mntmNewMenuItem_5.setBackground(new Color(105, 105, 105));
-		mntmNewMenuItem_5.setFont(new Font("Tahoma", Font.BOLD, 16));
+		mntmNewMenuItem_5.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 18));
 
 		menuBar.add(mntmNewMenuItem_5);
 		
 		JMenuItem mntmNewMenuItem_6 = new JMenuItem("EXIT");
 		mntmNewMenuItem_6.setIcon(new ImageIcon(AdminHome.class.getResource("/img2/icons8-close-window-80.png")));
-		mntmNewMenuItem_6.setHorizontalAlignment(SwingConstants.CENTER);
+		mntmNewMenuItem_6.setHorizontalAlignment(SwingConstants.LEFT);
 		mntmNewMenuItem_6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				int a=JOptionPane.showConfirmDialog(null,"Do You Really Want to Exit?","Confirm",JOptionPane.YES_NO_OPTION);
@@ -171,7 +171,7 @@ public class AdminHome {
 		mntmNewMenuItem_6.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mntmNewMenuItem_6.setForeground(new Color(245, 245, 245));
 		mntmNewMenuItem_6.setBackground(new Color(105, 105, 105));
-		mntmNewMenuItem_6.setFont(new Font("Tahoma", Font.BOLD, 16));
+		mntmNewMenuItem_6.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 18));
 		
 		menuBar.add(mntmNewMenuItem_6);
 		frame.getContentPane().setLayout(null);

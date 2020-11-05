@@ -60,6 +60,7 @@ public class Index {
 		frmIndex.setSize(x,y);
 		
 		JButton btnNewButton = new JButton("Admin");
+		btnNewButton.setBounds(1021, 149, 180, 57);
 		btnNewButton.setForeground(Color.WHITE);
 		btnNewButton.setBackground(new Color(51, 204, 204));
 
@@ -71,9 +72,10 @@ public class Index {
 				
 			}
 		});
-		btnNewButton.setFont(new Font("Georgia", Font.BOLD, 18));
+		btnNewButton.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 22));
 		
 		JButton btnNewButton_1 = new JButton("Student");
+		btnNewButton_1.setBounds(1021, 355, 180, 57);
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				frmIndex.setVisible(false);
@@ -84,12 +86,13 @@ public class Index {
 		btnNewButton_1.setForeground(Color.WHITE);
 		btnNewButton_1.setBackground(Color.ORANGE);
 		
-		btnNewButton_1.setFont(new Font("Georgia", Font.BOLD, 18));
+		btnNewButton_1.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 22));
 		
 		JButton btnNewButton_2 = new JButton("Exit");
+		btnNewButton_2.setBounds(1021, 561, 180, 55);
 		btnNewButton_2.setForeground(Color.WHITE);
 		btnNewButton_2.setBackground(new Color(255, 51, 0));
-		btnNewButton_2.setFont(new Font("Georgia", Font.BOLD, 18));
+		btnNewButton_2.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 22));
 		
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -101,79 +104,37 @@ public class Index {
 		});
 		
 		JLabel lblNewLabel = new JLabel("Welcome");
-		lblNewLabel.setForeground(new Color(255, 99, 71));
-		lblNewLabel.setFont(new Font("Verdana", Font.BOLD, 50));
+		lblNewLabel.setBounds(48, 11, 477, 95);
+		lblNewLabel.setForeground(Color.ORANGE);
+		lblNewLabel.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 60));
 		
 		JLabel lblNewLabel_1 = new JLabel("Don't Stress.");
+		lblNewLabel_1.setBounds(59, 135, 254, 47);
 		lblNewLabel_1.setForeground(new Color(220, 220, 220));
-		lblNewLabel_1.setFont(new Font("Dialog", Font.BOLD, 30));
+		lblNewLabel_1.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 35));
 		
 		JLabel lblNewLabel_2 = new JLabel("Do your Best.");
+		lblNewLabel_2.setBounds(59, 182, 254, 47);
 		lblNewLabel_2.setForeground(new Color(220, 220, 220));
-		lblNewLabel_2.setFont(new Font("Dialog", Font.BOLD, 30));
+		lblNewLabel_2.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 35));
 		
 		JLabel lblNewLabel_3 = new JLabel("Forget the Rest.");
+		lblNewLabel_3.setBounds(59, 229, 254, 47);
 		lblNewLabel_3.setForeground(new Color(220, 220, 220));
-		lblNewLabel_3.setFont(new Font("Dialog", Font.BOLD, 30));
+		lblNewLabel_3.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 35));
 		
 		JLabel lblNewLabel_4 = new JLabel("");
+		lblNewLabel_4.setBounds(0, 0, 1366, 768);
 		lblNewLabel_4.setIcon(new ImageIcon(Index.class.getResource("/img2/question-mark-2492009_1920.jpg")));
 		lblNewLabel_4.setFont(new Font("Dialog", Font.BOLD, 30));
-		GroupLayout groupLayout = new GroupLayout(frmIndex.getContentPane());
-		groupLayout.setHorizontalGroup(
-			groupLayout.createParallelGroup(Alignment.LEADING)
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(59)
-					.addComponent(lblNewLabel_2, GroupLayout.PREFERRED_SIZE, 224, GroupLayout.PREFERRED_SIZE)
-					.addGap(738)
-					.addComponent(btnNewButton, GroupLayout.PREFERRED_SIZE, 180, GroupLayout.PREFERRED_SIZE))
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(48)
-					.addComponent(lblNewLabel, GroupLayout.PREFERRED_SIZE, 477, GroupLayout.PREFERRED_SIZE))
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(1021)
-					.addComponent(btnNewButton_2, GroupLayout.PREFERRED_SIZE, 180, GroupLayout.PREFERRED_SIZE))
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(1021)
-					.addComponent(btnNewButton_1, GroupLayout.PREFERRED_SIZE, 180, GroupLayout.PREFERRED_SIZE))
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(59)
-					.addComponent(lblNewLabel_3, GroupLayout.PREFERRED_SIZE, 237, GroupLayout.PREFERRED_SIZE))
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(59)
-					.addComponent(lblNewLabel_1, GroupLayout.PREFERRED_SIZE, 225, GroupLayout.PREFERRED_SIZE))
-				.addGroup(Alignment.TRAILING, groupLayout.createSequentialGroup()
-					.addComponent(lblNewLabel_4, GroupLayout.PREFERRED_SIZE, 1366, GroupLayout.PREFERRED_SIZE)
-					.addContainerGap())
-		);
-		groupLayout.setVerticalGroup(
-			groupLayout.createParallelGroup(Alignment.LEADING)
-				.addGroup(groupLayout.createSequentialGroup()
-					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-						.addGroup(groupLayout.createSequentialGroup()
-							.addGap(171)
-							.addComponent(lblNewLabel_2, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
-						.addGroup(groupLayout.createSequentialGroup()
-							.addGap(149)
-							.addComponent(btnNewButton, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE))
-						.addGroup(groupLayout.createSequentialGroup()
-							.addGap(11)
-							.addComponent(lblNewLabel, GroupLayout.PREFERRED_SIZE, 95, GroupLayout.PREFERRED_SIZE))
-						.addGroup(groupLayout.createSequentialGroup()
-							.addGap(561)
-							.addComponent(btnNewButton_2, GroupLayout.PREFERRED_SIZE, 55, GroupLayout.PREFERRED_SIZE))
-						.addGroup(groupLayout.createSequentialGroup()
-							.addGap(355)
-							.addComponent(btnNewButton_1, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE))
-						.addGroup(groupLayout.createSequentialGroup()
-							.addGap(222)
-							.addComponent(lblNewLabel_3, GroupLayout.PREFERRED_SIZE, 35, GroupLayout.PREFERRED_SIZE))
-						.addGroup(groupLayout.createSequentialGroup()
-							.addGap(129)
-							.addComponent(lblNewLabel_1, GroupLayout.PREFERRED_SIZE, 31, GroupLayout.PREFERRED_SIZE))
-						.addComponent(lblNewLabel_4, GroupLayout.PREFERRED_SIZE, 768, GroupLayout.PREFERRED_SIZE))
-					.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-		);
-		frmIndex.getContentPane().setLayout(groupLayout);
+		frmIndex.getContentPane().setLayout(null);
+		frmIndex.getContentPane().add(lblNewLabel_2);
+		frmIndex.getContentPane().add(btnNewButton);
+		frmIndex.getContentPane().add(lblNewLabel);
+		frmIndex.getContentPane().add(btnNewButton_2);
+		frmIndex.getContentPane().add(btnNewButton_1);
+		frmIndex.getContentPane().add(lblNewLabel_3);
+		frmIndex.getContentPane().add(lblNewLabel_1);
+		frmIndex.getContentPane().add(lblNewLabel_4);
 	}
 }
